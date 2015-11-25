@@ -83,6 +83,7 @@ public class Api {
 				photo.setCover(rs.getString("cover"));
 				photo.setLink(rs.getString("link"));
 				photo.setTitle(rs.getString("title"));
+				photo.setSite(rs.getString("site"));
 				photo.setCtime(rs.getTimestamp("ctime").getTime());
 				result.add(photo);
 			}

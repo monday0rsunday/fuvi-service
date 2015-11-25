@@ -8,6 +8,7 @@ public class Item {
 	private String sapo;
 	private String cover;
 	private String link;
+	private String site;
 	private long ctime;
 
 	public long getId() {
@@ -56,6 +57,14 @@ public class Item {
 
 	public void setLink(String gifUrl) {
 		this.link = gifUrl;
+	}
+
+	public String getSite() {
+		return site;
+	}
+
+	public void setSite(String site) {
+		this.site = site;
 	}
 
 	public long getCtime() {

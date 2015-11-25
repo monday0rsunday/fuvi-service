@@ -15,23 +15,12 @@
 	</properties>
 
 	<dependencies>
-		<!-- serialization -->
-		<dependency>
-			<groupId>org.msgpack</groupId>
-			<artifactId>msgpack</artifactId>
-			<version>0.6.11</version>
-		</dependency>
 
 		<!-- logging -->
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.14</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.1</version>
 		</dependency>
 
 		<!-- database -->
@@ -57,13 +46,6 @@
 		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
 			<artifactId>resteasy-jaxrs</artifactId>
-			<version>3.0.8.Final</version>
-		</dependency>
-
-		<!-- resteasy local server side response caching -->
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-cache-core</artifactId>
 			<version>3.0.8.Final</version>
 		</dependency>
 

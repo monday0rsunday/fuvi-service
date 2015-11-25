@@ -9,6 +9,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
 
+import org.jboss.resteasy.annotations.GZIP;
+
 import com.broduce.fuvi.service.Api;
 import com.broduce.fuvi.service.MessageBuilder;
 
@@ -17,6 +19,7 @@ public class ApiResource {
 
 	private Api api = new Api();
 
+	@GZIP
 	@GET
 	@Produces("application/json;charset=utf-8")
 	@Path("/category")
@@ -30,6 +33,7 @@ public class ApiResource {
 		}
 	}
 
+	@GZIP
 	@GET
 	@Produces("application/json;charset=utf-8")
 	@Path("/category/{category_id}/item")

@@ -6,8 +6,6 @@ import java.util.Set;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-import org.jboss.resteasy.plugins.cache.server.ServerCacheFeature;
-
 import com.broduce.fuvi.service.resource.ApiResource;
 import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 
@@ -18,7 +16,6 @@ public class MainApplication extends Application {
 
 	public MainApplication() {
 		singletons.add(new ApiResource());
-		singletons.add(new ServerCacheFeature());
 		singletons.add(new JacksonJsonProvider());
 	}
 
